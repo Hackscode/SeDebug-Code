@@ -1,0 +1,5 @@
+Powershell
+
+Install-Module -Name NtObjectManager 
+New-Win32Process cmd.exe -CreationFlags NewConsole -ParentProcess (Get-NtProcess -Name winlogon.exe)
+
